@@ -14,9 +14,9 @@ const Company = () => {
   return (
     <div className='company my-5'>
         <div className='wrapper container'>
-            <h1 className='companyTitle'>Company</h1>
+            <h1 className='companyTitle pt-4'>Our Partners</h1>
 
-            <div className='companyBrand d-flex justify-content-between align-items-center my-5 py-5 gap-md-5'>
+            <div className='companyBrand d-flex flex-nowrap row justify-content-between align-items-center flex-nowrap my-5 py-5 gap-md-5 gap-sm-5'>
                 <img src={ brand1 } className='brand' alt='bridgestone' />
                 <img src={ brand2 } className='brand' alt='yokohama' />
                 <img src={ brand3 } className='brand' alt='sailun' />
