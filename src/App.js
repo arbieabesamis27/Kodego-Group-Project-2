@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import {
   About,
+  Company,
   Contacts,
   Faqs,
   Footer,
@@ -16,6 +17,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <Header />
+      <Company />
       <Services />
       <About />
       <Faqs />

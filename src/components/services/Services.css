@@ -1,0 +1,136 @@
+.servicesContainer {
+    width: 100vw;
+    height: auto;
+}
+
+.servicesTitle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 28rem;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 5px solid var(--color-orange);
+}
+
+.servicesItem {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2,250px);
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+/* Logo */
+.servicesItem .group {
+    position: relative;
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 3rem 0;
+    text-transform: uppercase;
+}
+
+.servicesItem img {
+    display: block;
+    margin: auto;
+    height: 80px;
+    width: 80px;
+}
+
+.servicesItem .title {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.servicesItem .item_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.item_overlay > * {
+    transform: translateY(40px);
+    transition: transform 0.25s;
+}
+
+.item_overlay .description {
+    font-size: 0.8rem;
+    padding-bottom: 0.9rem;
+}
+
+.item_overlay .item_link {
+    /* text-decoration: none; */
+    color: var(--color-orange);
+}
+
+/* Hover */
+.item_overlay:hover {
+    opacity: 1;
+}
+
+.item_overlay:hover > * {
+    transform: translateY(0);
+}
+
+
+/* Bottom */
+.moreServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.moreServices .moreServicesTitle {
+    position: relative;;
+}
+
+.moreServices .moreServicesTitle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3rem;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 5px solid var(--color-orange);
+}
+
+.moreServicesList {
+    padding: 3rem 0;
+}
+
+.moreServicesList p {
+    text-transform: uppercase;
+    text-align: start;
+    line-height: 0.9;
+}
+
+@media screen and (max-width: 1024px) {
+    .servicesItem {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2,250px);
+    }
+}
