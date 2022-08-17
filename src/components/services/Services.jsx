@@ -16,7 +16,7 @@ const Services = () => {
       <div className='wrapper container d-flex flex-column justify-content-center align-items-center'>
         <h1 className='servicesTitle'>Services</h1>
 
-          <div className='servicesItem'>
+          <div className='servicesItem container'>
             <div className='item1 group'>
               <img src={ logo1 } alt='logo' />
               <div className='item_overlay'>
