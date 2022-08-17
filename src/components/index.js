@@ -1,4 +1,5 @@
 export { default as About } from "./about/About";
+export { default as Company } from "./company/Company";
 export { default as Contacts } from "./contacts/Contacts";
 export { default as Faqs } from "./faqs/Faqs";
 export { default as Footer } from "./footer/Footer";
