@@ -1,6 +1,10 @@
 import React from "react";
-import Cta from "../cta/Cta";
+import Container from "../sub-component/modal-container/Container";
 import "./Header.css";
+
+const onSubmit = (event) => {
+  event.preventDefault(event);
+};
 
 export const Header = () => {
   return (
@@ -12,7 +16,7 @@ export const Header = () => {
             <p>Because you deserve the best.</p>
           </div>
           <div className="header-container_heading-book slide-in-bottom">
-            <Cta />
+            <Container onSubmit={onSubmit} />
           </div>
         </div>
       </div>
