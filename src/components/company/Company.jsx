@@ -2,11 +2,11 @@ import React from 'react'
 import './Company.css'
 
 // logo
-import brand1 from './images/bridgestone.png'
-import brand2 from './images/yokohama.png'
-import brand3 from './images/sailun.png'
-import brand4 from './images/petron.png'
-import brand5 from './images/motul.png'
+import brand1 from '../../assets/companyBrands/bridgestone.png'
+import brand2 from '../../assets/companyBrands/yokohama.png'
+import brand3 from '../../assets/companyBrands/sailun.png'
+import brand4 from '../../assets/companyBrands/petron.png'
+import brand5 from '../../assets/companyBrands/motul.png'
 
 
 

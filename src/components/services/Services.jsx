@@ -2,12 +2,12 @@ import React from 'react'
 import './Services.css'
 
 // Images
-import logo1 from './images/nut.png'
-import logo2 from './images/drop.png'
-import logo3 from './images/inspection.png'
-import logo4 from './images/lightning.png'
-import logo5 from './images/AnC.png'
-import logo6 from './images/engine.png'
+import logo1 from '../../assets/servicesLogo/nut.png'
+import logo2 from '../../assets/servicesLogo/drop.png'
+import logo3 from '../../assets/servicesLogo/inspection.png'
+import logo4 from '../../assets/servicesLogo/lightning.png'
+import logo5 from '../../assets/servicesLogo/AnC.png'
+import logo6 from '../../assets/servicesLogo/engine.png'
 
 const Services = () => {
 

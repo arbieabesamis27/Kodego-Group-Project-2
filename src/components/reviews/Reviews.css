@@ -1,0 +1,34 @@
+.reviewContainer {
+    width: 100%;
+    height: 60vh;
+    margin: 2rem auto;
+}
+
+.reviewTitle {
+    position: relative;
+    font-weight: 600;
+}
+
+.reviewTitle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    max-width: 3.5rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 5px solid var(--color-orange);
+}
+
+.cardBody {
+    width: 24em;
+    height: 20em;
+}
+
+.modal .textbox {
+    max-width: 27.2rem;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}

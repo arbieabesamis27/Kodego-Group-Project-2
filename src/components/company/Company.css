@@ -11,14 +11,16 @@
 .wrapper .companyTitle {
     color: var(--color-grey);
     font-weight: 600;
+    position: relative;
 }
 
 .wrapper .companyTitle::after {
     content: '';
     display: block;
     position: absolute;
-    top: 11rem;
-    width: 50px;
+    top: 5rem;
+    max-width: 3.5rem;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-bottom: 5px solid var(--color-grey);

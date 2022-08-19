@@ -4,14 +4,16 @@
 
 .servicesTitle {
     font-weight: 600;
+    position: relative;
 }
 
 .servicesTitle::after {
     content: '';
     display: block;
     position: absolute;
-    top: 30.5rem;
-    width: 50px;
+    top: 3.5rem;
+    max-width: 3.5rem;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-bottom: 5px solid var(--color-orange);
@@ -114,7 +116,8 @@
     display: block;
     position: absolute;
     top: 2.6rem;
-    width: 50px;
+    max-width: 3rem;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-bottom: 4px solid var(--color-orange);
