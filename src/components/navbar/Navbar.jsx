@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import Container from "../sub-component/modal-container/Container";
 import "./Navbar.css";
 import logo from "../../assets/MagsLogo - Desktop.png";
 
@@ -20,6 +21,11 @@ const Menu = () => (
   </>
 );
 
+const onSubmit = (event) => {
+  event.preventDefault(event);
+  console.log(event.target.name.value);
+  console.log(event.target.email.value);
+};
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
@@ -35,7 +41,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-book">
-        <button type="button">Book Schedule</button>
+        <Container onSubmit={onSubmit} />
       </div>
       <div className="navbar-menu">
         {toggleMenu ? (
@@ -52,11 +58,11 @@ const Navbar = () => {
           />
         )}
         {toggleMenu && (
-          <div className="navbar-menu_container shadow-drop-tr">
+          <div className="navbar-menu_container swing-in-top-fwd">
             <div className="navbar-menu_container-links ">
               <Menu />
               <div className="navbar-menu_container-links-book">
-                <button type="button">Book Schedule</button>
+                <Container onSubmit={onSubmit} />
               </div>
             </div>
           </div>
