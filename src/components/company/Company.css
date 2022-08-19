@@ -1,5 +1,5 @@
 .company {
-    height: 30vh;
+    height: auto;
     background-color: var(--color-orange);
 }
 
@@ -29,8 +29,21 @@
 
 .wrapper .brand {
     display: block;
-    max-height: 70px;
+    max-width: 17%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* max-height: 70px;
     height: 100%;
     max-width: 150px;
-    width: 100%;
+    width: 100%; */
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper .brand {
+        max-width: 22%;
+        width: 100%;
+        padding: 0 1rem;
+    }
 }

@@ -143,8 +143,8 @@ const Reviews = () => {
                           </div>
                     <textarea className='textbox' rows={10} placeholder='Your message'></textarea>
                     <div className='my-3'>
-                      <input type='text' className='username p-1 mx-2' placeholder='Your name*' required/>
-                      <input type='text' className='number p-1 mx-2' placeholder='Phone number*' required/>
+                      <input type='text' className='username p-1 mx-auto mb-3 w-100' placeholder='Your name*' required/>
+                      <input type='text' className='number p-1 mx-auto w-100' placeholder='Phone number*' required/>
                     </div>
                   </form>
               </div>

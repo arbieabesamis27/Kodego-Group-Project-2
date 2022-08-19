@@ -42,8 +42,8 @@
 .servicesItem img {
     display: block;
     margin: auto;
-    height: 80px;
-    width: 80px;
+    height: 50%;
+    width: 40%;
 }
 
 .servicesItem .title {
@@ -135,8 +135,36 @@
 
 @media screen and (max-width: 1024px) {
     .servicesItem {
-        display: grid;
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: repeat(3, 250px);
         grid-template-rows: repeat(2,250px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .servicesItem {
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .servicesItem img {
+        height: 40%;
+        width: 30%;
+    }
+
+    .servicesItem .title {
+        margin-top: 1.5rem;
+        font-size: 0.95rem;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 500px) {
+    .servicesItem {
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    .moreServices {
+        padding: 0 2rem;
     }
 }
