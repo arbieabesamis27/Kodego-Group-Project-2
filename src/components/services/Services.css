@@ -3,8 +3,8 @@
 }
 
 .servicesTitle {
-    font-weight: 600;
     position: relative;
+    font-weight: 600;
 }
 
 .servicesTitle::after {

@@ -41,7 +41,7 @@ const Reviews = () => {
           <div className='row gap-5 py-3 my-5'>
           <Swiper
             slidesPerView={3}
-            spaceBetween={50}
+            spaceBetween={10}
             loop={true}
             pagination={{
               clickable: true,
@@ -51,7 +51,7 @@ const Reviews = () => {
             className="mySwiper"
           >
           <SwiperSlide className='slide'>
-            <div className='col cardBody p-3'>
+            <div className='col-4 cardBody p-3'>
               <div style={reviewStar.container}>
                 <div style={reviewStar.stars}>
                     {stars.map((_, index) => {
@@ -62,12 +62,12 @@ const Reviews = () => {
                   </div>
               </div>
               <h5 className='card-username py-3'>John Doe</h5>
-              <p className='card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices magna at tristique lobortis. Aliquam vel ex ac ex malesuada viverra. Sed euismod nisl et pellentesque maximus. Nam at nisi eros.</p> 
+              <p className='card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices magna at tristique lobortis. Aliquam vel ex ac ex malesuada viverra. Sed euismod nisl et pellentesque maximus.</p> 
             </div>
           </SwiperSlide>
 
           <SwiperSlide className='slide2'>
-            <div className='col cardBody p-3'>
+            <div className='col-4 cardBody p-3'>
               <div style={reviewStar.container}>
                 <div style={reviewStar.stars}>
                     {stars.map((_, index) => {
@@ -83,7 +83,7 @@ const Reviews = () => {
           </SwiperSlide>
 
           <SwiperSlide className='slide3'>
-            <div className='col cardBody p-3'>
+            <div className='col-4 cardBody p-3'>
               <div style={reviewStar.container}>
                 <div style={reviewStar.stars}>
                     {stars.map((_, index) => {
@@ -102,12 +102,9 @@ const Reviews = () => {
       </div> 
     </div>
 
-
-
-
         {/* Button Review */}
-        <div className='container d-block text-center pt-5 mt-5'>
-          <button type='button' className='btn btnReview btn-warning' data-bs-toggle='modal' data-bs-target='#review'>Leave a Review</button>
+        <div className='container d-block text-center pt-1 mt-3'>
+          <button type='button' className='btn btnReview btn-outline-dark' data-bs-toggle='modal' data-bs-target='#review'>Leave a Review</button>
         </div>
 
         {/* Modal */}
@@ -142,9 +139,9 @@ const Reviews = () => {
                             </div>
                           </div>
                     <textarea className='textbox' rows={10} placeholder='Your message'></textarea>
-                    <div className='my-3'>
-                      <input type='text' className='username p-1 mx-auto mb-3 w-100' placeholder='Your name*' required/>
-                      <input type='text' className='number p-1 mx-auto w-100' placeholder='Phone number*' required/>
+                    <div className='modalInfo my-3'>
+                      <input type='text' className='username p-1 mb-3' placeholder='Your name*' required/>
+                      <input type='text' className='number p-1' placeholder='Phone number*' required/>
                     </div>
                   </form>
               </div>
@@ -171,7 +168,8 @@ const styles = {
 const reviewStar = {
   container: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     alignItems: 'start'
   }
 }
