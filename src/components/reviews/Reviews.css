@@ -1,7 +1,6 @@
 .reviewContainer {
-    height: auto;
     width: 100vw;
-    margin: 5rem auto;
+    margin: 3rem auto;
 }
 
 .reviewTitle {
@@ -80,35 +79,5 @@
     .cardBody {
         width: 100%;
         height: 100%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .reviewContainer {
-        padding: 12rem 0;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .reviewContainer {
-        padding: 13rem 0;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .reviewContainer {
-        padding: 15rem 0;
-    }
-}
-
-@media screen and (max-width: 391px) {
-    .reviewContainer {
-        padding: 18rem 0;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .reviewContainer {
-        padding: 23rem 0;
     }
 }

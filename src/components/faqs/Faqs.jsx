@@ -15,7 +15,7 @@ export const Faqs = () => {
               </button>
             </h2>
             <div id="item1" className="accordion-collapse collapse" aria-labelledby="flush-item1" data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body">While booking a priority appointment online is encouraged, it is not necessary - you can stop by any of our locations in Quezon City at your convenience!</div>
+              <div className="accordion-body">While booking a priority appointment online is encouraged, it is not necessary - you can stop by our location in Seaside Blvd, 123, Pasay, 1300 Metro Manila at your convenience!</div>
             </div>
           </div>
 
