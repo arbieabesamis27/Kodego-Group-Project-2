@@ -1,17 +1,23 @@
 import React from "react";
+import Container from "../sub-component/modal-container/Container";
 import "./Services.css";
 
 // Images
-import logo1 from "./images/nut.png";
-import logo2 from "./images/drop.png";
-import logo3 from "./images/inspection.png";
-import logo4 from "./images/lightning.png";
-import logo5 from "./images/AnC.png";
-import logo6 from "./images/engine.png";
+import logo1 from '../../assets/servicesLogo/nut.png'
+import logo2 from '../../assets/servicesLogo/drop.png'
+import logo3 from '../../assets/servicesLogo/inspection.png'
+import logo4 from '../../assets/servicesLogo/lightning.png'
+import logo5 from '../../assets/servicesLogo/AnC.png'
+import logo6 from '../../assets/servicesLogo/engine.png'
 
 const Services = () => {
+
+  const onSubmit = (event) => {
+    event.preventDefault(event);
+  };
+
   return (
-    <div className="servicesContainer">
+    <div id="services" className="servicesContainer">
       <div className="wrapper container d-flex flex-column justify-content-center align-items-center">
         <h1 className="servicesTitle">Services</h1>
 
@@ -20,14 +26,14 @@ const Services = () => {
             <img src={logo1} alt="logo" />
             <div className="item_overlay">
               <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Our general repair service team is always ready to attend to your needs, whether your car is in our dealerships, or it’s an emergency that happened on the road.
               </p>
-              <a href="./contacts" className="item_link">
-                Book an Appointment
-              </a>
+            <div className="header-container_heading-book slide-in-bottom">
+              <Container onSubmit={onSubmit} />
             </div>
 
-            <p className="title">General Repair</p>
+            </div>
+              <p className="title">General Repair</p>
           </div>
 
           <div className="item2 group">
@@ -35,30 +41,31 @@ const Services = () => {
             <div className="item_overlay">
               <p className="description">
                 Oil is the lifeblood of your engine. It reduces friction,
-                lessens wear, provides lubrication, forms a seal between the
-                pistons, rings and cylinder walls while helping to cool engine
-                parts.
+                lessens wear, forms a seal, rings and 
+                cylinder walls while helping to cool engine parts.
               </p>
-              <a href="./contacts" className="item_link">
-                Book an Appointment
-              </a>
-            </div>
 
-            <p className="title">Oil Change</p>
+              <div className="header-container_heading-book slide-in-bottom">
+                <Container onSubmit={onSubmit} />
+              </div>
+
+            </div>
+              <p className="title">Oil Change</p>
           </div>
 
           <div className="item3 group">
             <img src={logo3} alt="logo" />
             <div className="item_overlay">
               <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maintenance inspections can identify minor issues before they turn into costly repairs.
               </p>
-              <a href="./contacts" className="item_link">
-                Book an Appointment
-              </a>
+
+            <div className="header-container_heading-book slide-in-bottom">
+              <Container onSubmit={onSubmit} />
             </div>
 
-            <p className="title">Nys Inspection</p>
+            </div>
+              <p className="title">Nys Inspection</p>
           </div>
 
           <div className="item4 group">
@@ -68,12 +75,13 @@ const Services = () => {
                 Mag's-trained professionals can test your car battery and
                 replace it if necessary with a battery from leading brands.
               </p>
-              <a href="./contacts" className="item_link">
-                Book an Appointment
-              </a>
+
+            <div className="header-container_heading-book slide-in-bottom">
+              <Container onSubmit={onSubmit} />
             </div>
 
-            <p className="title">Battery, Alternator, Starter Replacement</p>
+            </div>
+              <p className="title">Battery, Alternator, Starter Replacement</p>
           </div>
 
           <div className="item5 group">
@@ -81,30 +89,30 @@ const Services = () => {
             <div className="item_overlay">
               <p className="description">
                 Car AC systems have components that require love and attention
-                to avoid drying out and cracking. The car heater also needs
-                regular check-ups to make sure there are no leaky valves or
-                blockages.
+                to avoid drying out and cracking.
               </p>
-              <a href="./contacts" className="item_link">
-                Book an Appointment
-              </a>
-            </div>
 
-            <p className="title">A/C Repairs</p>
+              <div className="header-container_heading-book slide-in-bottom">
+                <Container onSubmit={onSubmit} />
+              </div>
+
+            </div>
+              <p className="title">A/C Repairs</p>
           </div>
 
           <div className="item6 group">
             <img src={logo6} alt="logo" />
             <div className="item_overlay">
               <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Checking lights, tyres, exhaust and operations of brakes and steering. Ensuring your engine is 'tuned' to run in its peak condition.
               </p>
-              <a href="./contacts" className="item_link">
-                Book an Appointment
-              </a>
-            </div>
+              
+              <div className="header-container_heading-book slide-in-bottom">
+                <Container onSubmit={onSubmit} />
+              </div>
 
-            <p className="title">Engine Work</p>
+            </div>
+              <p className="title">Engine Work</p>
           </div>
         </div>
 

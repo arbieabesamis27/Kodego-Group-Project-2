@@ -1,0 +1,39 @@
+.faqsContainer {
+    height: 80vh;
+    margin: 3rem auto;
+}
+
+.faqsTitle {
+    position: relative;
+    font-weight: 600;
+}
+
+.faqsTitle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    max-width: 7rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 5px solid var(--color-orange);
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .accordion {
+        width: 70%;
+    }
+
+    .faqsTitle::after {
+        top: 5rem;
+    }
+}

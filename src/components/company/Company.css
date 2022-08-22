@@ -1,5 +1,5 @@
 .company {
-    height: 30vh;
+    height: auto;
     background-color: var(--color-orange);
 }
 
@@ -11,14 +11,16 @@
 .wrapper .companyTitle {
     color: var(--color-grey);
     font-weight: 600;
+    position: relative;
 }
 
 .wrapper .companyTitle::after {
     content: '';
     display: block;
     position: absolute;
-    top: 11rem;
-    width: 50px;
+    top: 5rem;
+    max-width: 3.5rem;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-bottom: 5px solid var(--color-grey);
@@ -27,8 +29,21 @@
 
 .wrapper .brand {
     display: block;
-    max-height: 70px;
+    max-width: 17%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* max-height: 70px;
     height: 100%;
     max-width: 150px;
-    width: 100%;
+    width: 100%; */
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper .brand {
+        max-width: 22%;
+        width: 100%;
+        padding: 0 1rem;
+    }
 }
