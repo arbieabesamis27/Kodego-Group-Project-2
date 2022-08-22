@@ -23,13 +23,11 @@ const Menu = () => (
 
 const onSubmit = (event) => {
   event.preventDefault(event);
-  console.log(event.target.name.value);
-  console.log(event.target.email.value);
 };
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="navbar">
+    <div id="home" className="navbar">
       <div className="navbar-links">
         <div className="navbar-links_logo">
           <a href="#home">
