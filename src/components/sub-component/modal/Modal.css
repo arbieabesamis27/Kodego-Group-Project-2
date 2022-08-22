@@ -30,6 +30,16 @@
   max-height: calc(100% - 1em);
 }
 
+@media screen and (max-width: 2560px) {
+  .modal-area {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .modal-area {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 1050px) {
   .modal-area {
     left: 50%;
