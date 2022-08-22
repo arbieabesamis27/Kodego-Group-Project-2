@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Button from "./components/sub-component/button/Button";
 import {
   About,
   Company,
@@ -15,6 +16,7 @@ import {
 const App = () => {
   return (
     <div className="App">
+      <Button />
       <Navbar />
       <Header />
       <Company />

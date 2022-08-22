@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: #020202;
+  padding-top: 5%;
+  bottom: 0;
+  color: white;
+  margin-top: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.footer-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+}
+.footer-col:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 13rem;
+}
+.footer-col:nth-child(3) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 10rem;
+}
+.mags-logo img {
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
+.footer-col h4 {
+  color: #f5d10d;
+  font-size: 18px;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col h3 {
+  color: #f5d10d;
+  font-size: 20px;
+
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+} */
+
+.footer-col li a {
+  font-size: 16px;
+  text-size-adjust: 50px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+  color: white;
+  height: 30px;
+}
+
+.footer-col ul li a:hover {
+  color: #f6e71d;
+  padding-left: 10px;
+}
+
+.social-links a {
+  padding: 0;
+  display: inline-block;
+  margin: 5px 4px;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+  color: #181818;
+  background-color: #f6e71d;
+}
+
+.brand-links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+  height: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 760) {
+}
+
+@media screen and (max-width: 550px) {
+  .brand-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .brand-links img {
+    height: 40px;
+    margin: 0;
+  }
+}
