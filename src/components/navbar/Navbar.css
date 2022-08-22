@@ -132,4 +132,7 @@
   .navbar-menu_container-links-book {
     display: block;
   }
+  .navbar-links_logo img {
+    height: 40px;
+  }
 }
