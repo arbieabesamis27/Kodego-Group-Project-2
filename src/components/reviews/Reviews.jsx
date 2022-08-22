@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import './Reviews.css'
 import {FaStar} from 'react-icons/fa'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay, FreeMode } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 
 const colors = {
   orange: '#f5d10d',
@@ -36,22 +38,39 @@ const Reviews = () => {
 
     <div className='reviewContainer'>
           <h1 className='reviewTitle text-center'>Testimonials</h1>
-        
         <div className='cards container'>
-          <div className='row gap-5 py-3 my-5'>
+          <div className='row py-3 my-5'>
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={10}
             loop={true}
+            loopFillGroupWithBlank={true}
+            autoplay={{delay: 5000}}
             pagination={{
               clickable: true,
             }}
             navigation={true}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, Autoplay, FreeMode]}
+
+            breakpoints={{
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1440: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            }}
             className="mySwiper"
           >
-          <SwiperSlide className='slide'>
-            <div className='col-4 cardBody p-3'>
+
+          <SwiperSlide>
+            <div className='cardBody p-3'>
               <div style={reviewStar.container}>
                 <div style={reviewStar.stars}>
                     {stars.map((_, index) => {
@@ -66,8 +85,8 @@ const Reviews = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className='slide2'>
-            <div className='col-4 cardBody p-3'>
+          <SwiperSlide>
+            <div className='cardBody p-3'>
               <div style={reviewStar.container}>
                 <div style={reviewStar.stars}>
                     {stars.map((_, index) => {
@@ -82,8 +101,8 @@ const Reviews = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className='slide3'>
-            <div className='col-4 cardBody p-3'>
+          <SwiperSlide>
+            <div className='cardBody p-3'>
               <div style={reviewStar.container}>
                 <div style={reviewStar.stars}>
                     {stars.map((_, index) => {
@@ -94,11 +113,11 @@ const Reviews = () => {
                   </div>
                 </div>
               <h5 className='card-username py-3'>John Smith</h5>
-              <p className='card-text'>Nunc ultricies erat arcu, vel laoreet dolor cursus vitae. Nullam quis pharetra sapien. Nam erat nulla, suscipit ac euismod a, pharetra non nulla. Curabitur bibendum sapien velit, et tempus nulla viverra fringilla.</p> 
+              <p className='card-text'>Nunc ultricies erat arcu, vel laoreet dolor cursus vitae. Nullam quis pharetra sapien. Nam erat nulla, suscipit ac euismod a, pharetra non nulla. Curabitur bibendum sapien velit.</p> 
             </div>
           </SwiperSlide>
 
-        </Swiper>
+          </Swiper>
       </div> 
     </div>
 

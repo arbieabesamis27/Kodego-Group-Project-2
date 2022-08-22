@@ -1,11 +1,12 @@
 .reviewContainer {
     width: 100%;
     height: auto;
-    margin: 3rem auto;
+    margin: 5rem auto;
 }
 
 .reviewTitle {
     position: relative;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -16,26 +17,51 @@
     top: 3.5rem;
     max-width: 3.5rem;
     width: 100%;
+    height: 5px;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: 5px solid var(--color-orange);
+    background: var(--color-orange);
+    /* border-bottom: 5px solid var(--color-orange); */
 }
 
 .cardBody {
-    width: 20em;
-    height: 20em;
+    max-width: 20rem;
+    width: 100%;
+    height: 20rem;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: flex-start;
     cursor: pointer;
+
 }
 
-.cardBody .card-text {
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: start;
+    background: transparent;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+/* .cardBody .card-text {
     width: 20em;
-}
+} */
 
 /* Modal */
 .modal .textbox {
@@ -55,5 +81,34 @@
         width: 100%;
         height: 100%;
     }
-    
+}
+
+@media screen and (max-width: 767px) {
+    .reviewContainer {
+        padding: 12rem 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .reviewContainer {
+        padding: 13rem 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .reviewContainer {
+        padding: 15rem 0;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .reviewContainer {
+        padding: 18rem 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .reviewContainer {
+        padding: 23rem 0;
+    }
 }

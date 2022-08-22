@@ -5,7 +5,7 @@ export const Faqs = () => {
   return (
     <div id='faqs' className='faqsContainer'>
       <div className='wrapper container my-5'>
-        <h1 className='faqsTitle pb-5'>Frequently Asked Questions</h1>
+        <h1 className='faqsTitle pb-4'>Frequently Asked Questions</h1>
         <div className="accordion accordion-flush text-start my-5" id="accordionFlushExample">
 
           <div className="accordion-item">
