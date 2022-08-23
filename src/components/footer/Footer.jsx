@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/MagsLogoWhite.png";
+import Container from "../sub-component/modal-container/Container";
 
 export const Footer = () => {
   return (
@@ -11,13 +12,16 @@ export const Footer = () => {
             <h4>COMPANY INFORMATION</h4>
             <ul className="comp">
               <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
                 <a href="#about">About us</a>
               </li>
               <li>
                 <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#home">Company Policy</a>
+                <a href="#testimonials">Testimonials</a>
               </li>
             </ul>
           </div>
@@ -47,7 +51,9 @@ export const Footer = () => {
                 <a href="tel:555-666-7777">0475586249</a>
               </li>
               <li>
-                <a href="tel:555-666-7777">1531 addresss</a>
+                <a href="#contacts">
+                  Seaside Blvd, 123, Pasay, 1300 Metro Manila
+                </a>
               </li>
             </ul>
           </div>

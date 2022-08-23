@@ -1,0 +1,119 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-grey);
+  padding: 2rem 3rem;
+}
+.about-container h1 {
+  position: relative;
+  padding: 10px;
+}
+.about-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 4px;
+  width: 30%;
+  transform: translateX(-50%);
+  background-color: var(--color-orange);
+}
+.about-container h2 {
+  padding: 3rem 0 1rem 0;
+}
+.teams-container {
+  display: flex;
+  justify-content: space-between;
+}
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  text-align: center;
+}
+.team-container h5 {
+  font-weight: 500;
+  padding: 1rem 0 0 0;
+}
+.team-container h6 {
+  font-weight: 300;
+  color: var(--color-orange);
+}
+.team-container P {
+  font-weight: 300;
+  font-style: italic;
+}
+.portfolioBtn {
+  color: var(--color-grey);
+  background-color: var(--color-yellow);
+  padding: 7px 18px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+
+  transition: 0.2s ease-out;
+}
+
+.portfolioBtn:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+}
+.links a {
+  color: white;
+  display: inline-block;
+  transition: 0.2s ease-out;
+}
+.links a:hover {
+  color: var(--color-yellow);
+  display: inline-block;
+}
+.team-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: 3px solid var(--color-yellow);
+  border-radius: 50%;
+}
+.team-img img {
+  height: 10rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-black);
+}
+
+@media screen and (max-width: 1024px) {
+  .team-img img {
+    height: 9rem;
+  }
+  .team-container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .teams-container {
+    flex-direction: column;
+  }
+  .team-container {
+    padding: 2rem 1rem;
+    max-width: 500px;
+  }
+  .about-container {
+    padding: 2rem 1rem;
+  }
+  .team-img img {
+    height: 10rem;
+  }
+  .links {
+    gap: 5px;
+  }
+}
