@@ -75,7 +75,7 @@ export const About = () => {
           <div className="team-img">
             <img src={gerry} />
           </div>
-          <h5>Gerry</h5>
+          <h5>Gerry Alkuino</h5>
           <h6>Full-Stack Web Developer</h6>
 
           <p>
