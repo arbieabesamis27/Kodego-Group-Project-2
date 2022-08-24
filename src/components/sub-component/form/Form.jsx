@@ -3,18 +3,18 @@ import "./Form.css";
 
 export const Form = ({ onSubmit }) => {
   return (
-    <div class="container">
-      <div class="booking-form">
-        <div class="form-header">
+    <div className="container">
+      <div className="booking-form">
+        <div className="form-header">
           <h1>Book Schedule</h1>
         </div>
         <form onSubmit={onSubmit}>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <span class="form-label">Name</span>
+          <div className="row">
+            <div className="col-sm-6">
+              <div className="form-group">
+                <span className="form-label">Name</span>
                 <input
-                  class="form-control"
+                  className="form-control"
                   type="text"
                   placeholder="Enter your name"
                 />
@@ -22,10 +22,10 @@ export const Form = ({ onSubmit }) => {
             </div>
 
             <div className="col-sm-6">
-              <div class="form-group">
-                <span class="form-label">Phone</span>
+              <div className="form-group">
+                <span className="form-label">Phone</span>
                 <input
-                  class="form-control"
+                  className="form-control"
                   type="tel"
                   placeholder="Enter your phone number"
                 />
@@ -34,35 +34,35 @@ export const Form = ({ onSubmit }) => {
             <div className="col-sm-6"></div>
           </div>
 
-          <div class="form-group">
-            <span class="form-label">Location for home service (optional)</span>
+          <div className="form-group">
+            <span className="form-label">Location for home service (optional)</span>
             <input
-              class="form-control"
+              className="form-control"
               type="text"
               placeholder="Enter ZIP/Location"
             />
           </div>
-          <div class="form-group">
-            <span class="form-label">Message</span>
+          <div className="form-group">
+            <span className="form-label">Message</span>
             <input
-              class="form-control"
+              className="form-control"
               type="text"
               placeholder="Your Message"
             />
           </div>
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="form-group">
-                <span class="form-label">Preffered Date/Time</span>
-                <input class="form-control" type="date" required />
+          <div className="row">
+            <div className="col-sm-5">
+              <div className="form-group">
+                <span className="form-label">Preffered Date/Time</span>
+                <input className="form-control" type="date" required />
               </div>
             </div>
-            <div class="col-sm-7">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <span class="form-label">Hour</span>
-                    <select class="form-control">
+            <div className="col-sm-7">
+              <div className="row">
+                <div className="col-sm-4">
+                  <div className="form-group">
+                    <span className="form-label">Hour</span>
+                    <select className="form-control">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -76,13 +76,13 @@ export const Form = ({ onSubmit }) => {
                       <option>11</option>
                       <option>12</option>
                     </select>
-                    <span class="select-arrow"></span>
+                    <span className="select-arrow"></span>
                   </div>
                 </div>
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <span class="form-label">Min</span>
-                    <select class="form-control">
+                <div className="col-sm-4">
+                  <div className="form-group">
+                    <span className="form-label">Min</span>
+                    <select className="form-control">
                       <option>05</option>
                       <option>10</option>
                       <option>15</option>
@@ -95,24 +95,24 @@ export const Form = ({ onSubmit }) => {
                       <option>50</option>
                       <option>55</option>
                     </select>
-                    <span class="select-arrow"></span>
+                    <span className="select-arrow"></span>
                   </div>
                 </div>
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <span class="form-label">AM/PM</span>
-                    <select class="form-control">
+                <div className="col-sm-4">
+                  <div className="form-group">
+                    <span className="form-label">AM/PM</span>
+                    <select className="form-control">
                       <option>AM</option>
                       <option>PM</option>
                     </select>
-                    <span class="select-arrow"></span>
+                    <span className="select-arrow"></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="form-btn">
-            <button class="submit-btn">Book Now</button>
+          <div className="form-btn">
+            <button className="submit-btn">Book Now</button>
           </div>
         </form>
       </div>

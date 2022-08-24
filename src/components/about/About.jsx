@@ -46,27 +46,26 @@ export const About = () => {
           <div className="team-img">
             <img src={angelo} />
           </div>
-          <h5>Angelo</h5>
+          <h5>Mark Angelo Letada</h5>
           <h6>Full-Stack Web Developer</h6>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            I am Full-Stack Web Developer who works with both the front and back end of a website.
           </p>
-          <a className="portfolioBtn" href="#">
+          <a className="portfolioBtn" href="https://letadz.github.io/portfolio/" target="_blank">
             View my Portfolio
           </a>
           <div className="links">
-            <a href="#">
+            <a href="https://github.com/letadz" target="_blank">
               <GitHubIcon sx={{ height: "40px", width: "40px" }} />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/letadz/" target="_blank">
               <LinkedInIcon sx={{ height: "40px", width: "40px" }} />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/mrkngl_/" target="_blank">
               <InstagramIcon sx={{ height: "40px", width: "40px" }} />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/mrkngl1/" target="_blank">
               <FacebookIcon sx={{ height: "40px", width: "40px" }} />
             </a>
           </div>
