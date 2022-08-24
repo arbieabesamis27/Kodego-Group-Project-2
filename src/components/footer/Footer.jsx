@@ -81,7 +81,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        &copy; Mag's Auto Repair Philippines. All rights reserve
+        &copy; Mag's Auto Repair Philippines. All Right Reserved
       </div>
     </div>
   );
