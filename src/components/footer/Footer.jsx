@@ -65,18 +65,18 @@ export const Footer = () => {
             <img src={logo} alt="logo" />
           </a>
         </div>
-        <div class="social-links">
+        <div className="social-links">
           <a href="https://www.facebook.com/">
-            <i class="fa-brands fa-facebook-f"></i>
+            <i className="fa-brands fa-facebook-f"></i>
           </a>
           <a href="https://www.twitter.com/">
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </a>
           <a href="https://www.instagram.com/">
-            <i class="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="https://www.linkedin.com/">
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </div>

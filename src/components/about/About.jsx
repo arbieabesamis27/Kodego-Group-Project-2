@@ -24,14 +24,21 @@ export const About = () => {
             I am a Full-Stack Web Developer comfortable to work with both front
             and back end programming.
           </p>
-          <a className="portfolioBtn" href="#">
+          <a
+            className="portfolioBtn"
+            href="https://portfolio-q1yz2mckh-arbieabesamis27.vercel.app/"
+            target="_blank"
+          >
             View my Portfolio
           </a>
           <div className="links">
             <a href="https://github.com/arbieabesamis27" target="_blank">
               <GitHubIcon sx={{ height: "40px", width: "40px" }} />
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/arbie-abesamis-b21975126/"
+              target="_blank"
+            >
               <LinkedInIcon sx={{ height: "40px", width: "40px" }} />
             </a>
             <a href="https://www.instagram.com/arbie_abesamis/" target="_blank">
