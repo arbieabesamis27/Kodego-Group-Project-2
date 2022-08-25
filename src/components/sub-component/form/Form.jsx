@@ -170,7 +170,7 @@ export const Form = () => {
             </div>
           </div>
           <div className="form-btn">
-            <button className="submit-btn">Book Now!</button>
+            <button className="submit-btn">Book Now</button>
           </div>
         </form>
       </div>
