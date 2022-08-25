@@ -14,12 +14,13 @@ export const Contacts = () => {
           <p>Tel: 912-345-6789</p>
           <p>Tel: 0123-4567</p>
           <p>Email: magsautorepairshop@hotmail.com.</p>
+
           <div>
             <address>Seaside Blvd, 123, Pasay, 1300 Metro Manila</address>
           </div>
         </div>
         <div className="contacts-map_info">
-        <iframe
+          <iframe
             width="600"
             height="500"
             id="gmap_canvas"
@@ -28,8 +29,7 @@ export const Contacts = () => {
             scrolling="no"
             marginHeight="0"
             marginWidth="0"
-          >
-          </iframe>
+          ></iframe>
         </div>
       </div>
     </div>

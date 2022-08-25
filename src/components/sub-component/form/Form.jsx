@@ -1,22 +1,61 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./Form.css";
+import emailjs from "@emailjs/browser";
 
-export const Form = ({ onSubmit }) => {
+export const Form = () => {
+  const [firstName, setFirstName] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
+  const [location, setLocation] = useState("");
+  const [date, setDate] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setFirstName("");
+    setNumber("");
+    setMessage("");
+    setLocation("");
+    setDate("");
+
+    emailjs
+      .sendForm(
+        "service_qbnsjdd",
+        "template_lv21t0j",
+        form.current,
+        "VGt8PiRU6p8KqQoeK"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message Sent!");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className="container">
       <div className="booking-form">
         <div className="form-header">
           <h1>Book Schedule</h1>
         </div>
-        <form onSubmit={onSubmit}>
-          <div className="row">
-            <div className="col-sm-6">
-              <div className="form-group">
-                <span className="form-label">Name</span>
+
+        <form ref={form} onSubmit={sendEmail}>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <span class="form-label">Name</span>
+
                 <input
                   className="form-control"
                   type="text"
+                  name="user_name"
                   placeholder="Enter your name"
+                  onChange={(event) => setFirstName(event.target.value)}
+                  value={firstName}
                 />
               </div>
             </div>
@@ -27,7 +66,10 @@ export const Form = ({ onSubmit }) => {
                 <input
                   className="form-control"
                   type="tel"
+                  name="user_number"
                   placeholder="Enter your phone number"
+                  onChange={(event) => setNumber(event.target.value)}
+                  value={number}
                 />
               </div>
             </div>
@@ -35,11 +77,16 @@ export const Form = ({ onSubmit }) => {
           </div>
 
           <div className="form-group">
-            <span className="form-label">Location for home service (optional)</span>
+            <span className="form-label">
+              Location for home service (optional)
+            </span>
             <input
               className="form-control"
               type="text"
+              name="user_location"
               placeholder="Enter ZIP/Location"
+              onChange={(event) => setLocation(event.target.value)}
+              value={location}
             />
           </div>
           <div className="form-group">
@@ -48,13 +95,24 @@ export const Form = ({ onSubmit }) => {
               className="form-control"
               type="text"
               placeholder="Your Message"
+              name="message"
+              onChange={(event) => setMessage(event.target.value)}
+              value={message}
             />
           </div>
-          <div className="row">
-            <div className="col-sm-5">
-              <div className="form-group">
-                <span className="form-label">Preffered Date/Time</span>
-                <input className="form-control" type="date" required />
+
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="form-group">
+                <span class="form-label">Preffered Date/Time</span>
+                <input
+                  class="form-control"
+                  type="date"
+                  name="user_date"
+                  onChange={(event) => setDate(event.target.value)}
+                  value={date}
+                  required
+                />
               </div>
             </div>
             <div className="col-sm-7">
