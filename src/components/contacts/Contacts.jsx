@@ -15,7 +15,9 @@ export const Contacts = () => {
           <p>Tel: 0123-4567</p>
           <p>Email: magsautorepairshop@hotmail.com.</p>
 
-          <address>Seaside Blvd, 123, Pasay, 1300 Metro Manila</address>
+          <div>
+            <address>Seaside Blvd, 123, Pasay, 1300 Metro Manila</address>
+          </div>
         </div>
         <div className="contacts-map_info">
           <iframe
