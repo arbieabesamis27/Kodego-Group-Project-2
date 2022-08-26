@@ -90,23 +90,22 @@ export const About = () => {
           <h6>Full-Stack Web Developer</h6>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Providing a good website is my priority.
           </p>
-          <a className="portfolioBtn" href="#">
+          <a className="portfolioBtn" href="https://gportfolio.vercel.app/" target="_blank">
             View my Portfolio
           </a>
           <div className="links">
-            <a href="#">
+            <a href="#" target="_blank">
               <GitHubIcon sx={{ height: "40px", width: "40px" }} />
             </a>
-            <a href="#">
+            <a href="#" target="_blank">
               <LinkedInIcon sx={{ height: "40px", width: "40px" }} />
             </a>
-            <a href="#">
+            <a href="#" target="_blank">
               <InstagramIcon sx={{ height: "40px", width: "40px" }} />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/ge.akuino" target="_blank">
               <FacebookIcon sx={{ height: "40px", width: "40px" }} />
             </a>
           </div>
