@@ -96,7 +96,7 @@ export const About = () => {
             View my Portfolio
           </a>
           <div className="links">
-            <a href="#" target="_blank">
+            <a href="https://github.com/Gealax" target="_blank">
               <GitHubIcon sx={{ height: "40px", width: "40px" }} />
             </a>
             <a href="#" target="_blank">
