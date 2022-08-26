@@ -56,6 +56,7 @@ export const Form = () => {
                   placeholder="Enter your name"
                   onChange={(event) => setFirstName(event.target.value)}
                   value={firstName}
+                  required
                 />
               </div>
             </div>
@@ -70,6 +71,7 @@ export const Form = () => {
                   placeholder="Enter your phone number"
                   onChange={(event) => setNumber(event.target.value)}
                   value={number}
+                  required
                 />
               </div>
             </div>
@@ -87,6 +89,7 @@ export const Form = () => {
               placeholder="Enter ZIP/Location"
               onChange={(event) => setLocation(event.target.value)}
               value={location}
+              required
             />
           </div>
           <div className="form-group">
@@ -98,6 +101,7 @@ export const Form = () => {
               name="message"
               onChange={(event) => setMessage(event.target.value)}
               value={message}
+              required
             />
           </div>
 
