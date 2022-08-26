@@ -26,7 +26,7 @@ export const About = () => {
           </p>
           <a
             className="portfolioBtn"
-            href="https://portfolio-q1yz2mckh-arbieabesamis27.vercel.app/"
+            href="https://portfolio-5j7ipcnur-arbieabesamis27.vercel.app/"
             target="_blank"
           >
             View my Portfolio
@@ -57,9 +57,14 @@ export const About = () => {
           <h6>Full-Stack Web Developer</h6>
 
           <p>
-            I am Full-Stack Web Developer who works with both the front and back end of a website.
+            I am Full-Stack Web Developer who works with both the front and back
+            end of a website.
           </p>
-          <a className="portfolioBtn" href="https://letadz.github.io/portfolio/" target="_blank">
+          <a
+            className="portfolioBtn"
+            href="https://letadz.github.io/portfolio/"
+            target="_blank"
+          >
             View my Portfolio
           </a>
           <div className="links">
