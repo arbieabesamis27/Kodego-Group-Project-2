@@ -26,7 +26,7 @@ export const About = () => {
           </p>
           <a
             className="portfolioBtn"
-            href="https://portfolio-cnafjnrs5-arbieabesamis27.vercel.app/"
+            href="https://portfolio-phi-three-76.vercel.app/"
             target="_blank"
           >
             View my Portfolio
